@@ -1,0 +1,20 @@
+/* html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: black;
+} */
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+}
+.content .left{
+    height: calc(100% - 100px);
+    background-color: blue;
+}

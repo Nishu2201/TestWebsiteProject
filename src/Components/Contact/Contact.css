@@ -1,0 +1,20 @@
+.Contact_service{
+    /* height: 90vh; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 3% 7%;
+    border: 5px solid #00e4ff;
+    border-radius: 20px;
+}
+@media (max-width:432px) {
+    .Contact_service{
+        /* height: 90vh; */
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        margin: 3% 0%;
+        border: 5px solid #00e4ff;
+        border-radius: 20px;
+    } 
+}

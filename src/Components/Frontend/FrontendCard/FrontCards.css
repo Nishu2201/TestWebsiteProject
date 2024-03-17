@@ -1,0 +1,142 @@
+.FrontEndcards{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+/* .FrontEndcards video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(2px); 
+    opacity: 0.7; 
+  } */
+
+  .FrontCard-container {
+    /* height: 60vh; */
+/* width: 80%; */
+margin: 3rem 5rem;
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 10px;
+/* padding: 30px;
+border-radius: 10px;
+margin: 0 6rem;
+margin-bottom: 4rem; */
+}
+
+.Frontheading-cards{
+  font-size: 3rem;
+  color: white;
+  padding-top: 10px;
+}
+
+.FrontHead-part{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FrontheadingICON-Img{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.frontroleCards-text{
+  margin: 1.5rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: wrap;
+}
+
+.FrontcardSlider{
+    /* height: 50%; */
+    /* width: 100%; */
+    /* height: auto; */
+    margin: 3rem;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* background-color: aqua; */
+}
+.FrontRoleCard {
+   
+      color: #fff;
+      margin-left:3rem;
+      margin-right: 10rem;
+      margin-bottom: 55px;
+      border-radius: 8px;
+      /* padding: 0px 15px; */
+      padding-left: 10px;
+      /* padding-right: 10px; */
+      /* padding-bottom: 25px; */
+      /* width: 200px; */
+      width: calc(33.33% - 55px);
+      transition: 0.5s ease;
+      overflow: hidden;
+      transform: translate(0);
+  }
+  
+  .Frontcard-1{
+    background: linear-gradient(90deg, #b527cf 0%, #3546f0 100%);
+    margin-right: 3rem;
+    width: 250px;
+  }
+  .Frontcard-2{
+    margin-right: 3rem;
+    background: linear-gradient(90deg, #b527cf 0%, #3546f0 100%);
+  }
+  .Frontcard-3{
+    margin-right: 3rem;
+    background: linear-gradient(90deg, #b527cf 0%, #3546f0 100%);
+  }
+
+  @media (max-width:768px){
+    .FrontcardSlider{
+      margin-right: 2rem;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+
+    .Frontheading-cards{
+      font-size: 2rem;
+    }
+
+    .frontroleCards-headings{
+      font-size: 1.3rem;
+    }
+
+    .frontroleCards-text{
+      font-size: 1rem;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width:600px){
+    .FrontcardSlider{
+      margin-right: 2rem;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+
+    .Frontheading-cards{
+      font-size: 2rem;
+    }
+
+    .frontroleCards-headings{
+      font-size: 1.3rem;
+    }
+
+    .frontroleCards-text{
+      font-size: 1rem;
+      overflow: hidden;
+    }
+  }

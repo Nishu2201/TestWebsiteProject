@@ -1,0 +1,245 @@
+.BlockchainFront {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    /* margin: 2% 0%; */
+    /* margin-bottom: 5.5%; */
+    width: 100%;
+    }
+    
+  .full-page-video {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .full-page-video video {
+      position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100em;
+          object-fit: cover;
+          filter: blur(6px); 
+          opacity: 0.7;
+          z-index:-2;
+    }
+    .Blockchain_desc {
+      text-align: left;
+      flex: 1;
+      /* margin-top: 3rem; */
+      margin-right: 20px; 
+    }
+    .Blockchain_desc .Blockchainh3{
+      background: linear-gradient(90deg, #00e5ff 45%, transparent );
+      border-radius: 8px;
+      font-size: 1.5rem;
+      padding: 4px 20px;
+      width: 38rem;
+      margin: 0 13%;
+      margin-top: 0%;
+    }
+  .Blockchain_desc .Blockchainh1{
+    font-size: 4rem;
+    margin: 0 12.5%;
+    color: #eeeaea;
+  }
+  
+  .Blockchain_desc .Blockchainp{
+    margin: 1% 12.5%;
+    font-size: 1.1rem;
+    color: #eeeaea;
+    font-weight: 600;
+  }
+  
+    .Blockchain_desc .Blockchainspan{
+      color:#ffa108;
+    }
+    
+    .BlockFront-image {
+      flex: 1;
+      
+    }
+    
+    /* For responsiveness */
+    @media (max-width: 1024px) {
+      .BlockchainFront {
+          height: 100%;
+        padding-top: 4rem;
+      }
+      .Blockchain_desc .Blockchainh3{
+        width:28rem;
+          margin: 0 11%;
+          margin-top: 0%;
+        }
+      .Blockchain_desc .Blockchainh1{
+        font-size: 2.5rem;
+        margin: 0 12.5%;
+        color: #eeeaea;
+      }
+      
+      .Blockchain_desc .Blockchainp{
+        margin: 1% 12.5%;
+        font-size: 1rem;
+        color: #eeeaea;
+        font-weight: 500;
+      }
+    /* .BlockFront-image{
+     width: 100%;
+    } */
+    .about-image {
+      margin-top: 0; 
+      width: 100%;
+      /* margin-bottom: 3rem; */
+    }
+    }
+    @media (max-width: 996px) {
+      .BlockchainFront {
+        display: flex;
+          height: 100%;
+        flex-direction: column; 
+        padding-top: 4rem;
+      }
+      .Blockchain_desc .Blockchainh3{
+        width: 22rem;
+          margin: 0 11%;
+          margin-top: 0%;
+        }
+      .Blockchain_desc .Blockchainh1{
+        font-size: 2.5rem;
+        margin: 0 12.5%;
+        color: #eeeaea;
+      }
+      
+      .Blockchain_desc .Blockchainp{
+        margin: 1% 12.5%;
+        font-size: 1rem;
+        color: #eeeaea;
+        font-weight: 500;
+      }
+    /* .BlockFront-image{
+     width: 100%;
+    } */
+      .BlockServ-image {
+        margin-top: 1rem; 
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      .BlockchainFront {
+          height: 90%;
+        flex-direction: column; 
+        padding-top: 4rem;
+      }
+      .Blockchain_desc .Blockchainh3{
+          margin: 0 11%;
+          margin-top: 0%;
+        }
+      .Blockchain_desc .Blockchainh1{
+        font-size: 2.5rem;
+        margin: 0 12.5%;
+        color: #eeeaea;
+      }
+      
+      .Blockchain_desc .Blockchainp{
+        margin: 1% 12.5%;
+        font-size: 1.2rem;
+        color: #eeeaea;
+        font-weight: 500;
+      }
+    /* .Serv-image{
+    margin-bottom: 20em;
+     width: 100%;
+    } */
+      .BlockServ-image {
+        margin-top: 0; 
+        width: 100%;
+        /* margin-bottom: 8rem; */
+      }
+    }
+    
+    @media (max-width: 421px) {
+      .BlockchainFront {
+          height: 90%;
+        flex-direction: column; 
+        padding-top: 4rem;
+      }
+      .Blockchain_desc {
+          text-align: left;
+          flex: 1;
+          margin-right: 0;  }
+      .Blockchain_desc .Blockchainh3{
+        margin-top: 2rem;
+        margin-left: 0;
+      }
+    .Blockchain_desc .Blockchainh1{
+      font-size: 2rem;
+      margin-left: 0;
+      margin-right: 0;
+      /* margin: 0 12.5%; */
+      color: #eeeaea;
+    }
+    
+    .Blockchain_desc .Blockchainp{
+      /* margin: 1% 12.5%; */
+      margin-left: 0;
+      font-size: 1rem;
+      color: #eeeaea;
+      font-weight: 600;
+    }
+      .BlockServ-image {
+        margin-top: 1rem; 
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+    }
+    @media (max-width: 390px) {
+      .BlockchainFront {
+          height: 90%;
+        flex-direction: column; 
+        padding-top: 4rem;
+      }
+      .Blockchain_desc {
+          text-align: left;
+          flex: 1;
+          margin-right: 0;  }
+      .Blockchain_desc .Blockchainh3{
+        margin-top: 2rem;
+        margin-left: 0;
+      }
+    .Blockchain_desc .Blockchainh1{
+      font-size: 3rem;
+      margin-left: 0;
+      margin-right: 0;
+      /* margin: 0 12.5%; */
+      color: #eeeaea;
+    }
+      .Blockchain_desc .Blockchainh3{
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    .Blockchain_desc .Blockchainh1{
+       margin-right: 0;
+      font-size: 2.5rem;
+      margin-left: 0;
+      /* margin: 0 12.5%; */
+      color: #eeeaea;
+    }
+    
+    .Blockchain_desc .Blockchainp{
+      margin-left: 0;
+      font-size: 1rem;
+      color: #eeeaea;
+      font-weight: 600;
+    }
+      .BlockServ-image{
+        margin-top: 0; 
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+    }

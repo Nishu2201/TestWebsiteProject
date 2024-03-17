@@ -1,0 +1,233 @@
+.design_card {
+    /* height: 70vh; */
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);/* Transparent background */
+      padding: 30px;
+      border-radius: 10px;
+      margin: 0 6rem;
+      margin-bottom: 6%;
+    }
+    
+    .desCard-heads {
+      color: #eeeaee;
+      font-size: 3rem;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    
+    .CardContainer {
+      /* height: 55vh; */
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    
+    .DesCards-Items {
+      width: calc(33.33% - 55px); /* Three items in a row with spacing */
+      margin-bottom: 20px;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      padding-top: 1.5rem;
+      text-align: left;
+    }
+  
+    .DeCard-1{
+      background: linear-gradient(90deg, #b527cf 0%, #3546f0 100%);
+    }
+  
+    .DeCard-1:hover {
+      transform: scale(1.03);
+      box-shadow: -7px 4px 28px -3px #b527cf;
+    }
+  
+    .DeCard-2{
+      background: linear-gradient(90deg, #3bd9d9 0%, #8035f0 100%);
+   }
+    .DeCard-2:hover {
+      transform: scale(1.03);
+      box-shadow: -7px 4px 28px -3px #3bd9d9;
+    }
+
+    .DeCard-3{
+      background: linear-gradient(90deg, #ff9500 0%, #d5cb0f 100%);
+    }
+  
+    .DeCard-3:hover {
+      transform: scale(1.03);
+      box-shadow: -7px 4px 28px -3px #ff9500;
+    }
+  
+    .CardIcons {
+      margin-top: -0.4rem; 
+      padding-bottom: 0.8rem;
+      display: flex;
+     justify-content: flex-start;
+     
+    }
+   .DesH1-Pics{
+    float: left;
+    /* padding-right: -15%; */
+   }
+    .Card-h3head {
+        padding-left: 2.7%;
+        padding-right: 1%;
+        text-wrap: wrap;
+        /* float: left; */
+      text-align: left;
+      color: #eeeaee;
+      font-size: 1.3rem;
+      margin-bottom: 0; /* Reset margin to ensure alignment */
+    }
+    .Card-2h3{
+      padding-bottom: 0.5rem;
+      padding-left: 2.7%;
+        padding-right: 1%;
+        text-wrap: wrap;
+        /* float: left; */
+      text-align: left;
+      color: #eeeaee;
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+     .headPart{
+        height: 2rem;
+     }
+    .DesPicture2{
+        height: 67%;
+    }
+    .Card-datas {
+      text-align: left;
+      padding-top: 1.9rem;
+      padding-left: 0.5rem;
+    }
+    .Card2-datas{
+      padding-top: 2rem;
+    }
+    @media screen and (max-width: 1200px) {
+      .DesCards-Items {
+        /* width: 550px;
+        height: 350px; */
+        width: calc(50% - 30px); 
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .DesCards-Items {
+        width: 100%; 
+        height: 320px;
+      }
+      .Card-h3head{
+        font-size: 1.5em;
+      }
+      .Card-2h3{
+        padding-bottom: 2rem;
+        padding-left: 2.7%;
+          padding-right: 1%;
+          text-wrap: wrap;
+          /* float: left; */
+        text-align: left;
+        color: #eeeaee;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+      .Card-datas{
+        font-size: 1.1em;
+        margin-top: 0;
+      }
+      
+    }
+  
+    @media screen and (max-width: 641px) {
+      .design_card{
+        padding: 0 2%;
+        margin: 3% 4%;
+      }
+      .Card-2h3{
+        padding-bottom: 2rem;
+        padding-left: 2.7%;
+          padding-right: 1%;
+          text-wrap: wrap;
+          /* float: left; */
+        text-align: left;
+        color: #eeeaee;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+     
+      .DesCards-Items{
+        /* height: 250px; */
+        height: 100%;
+        width: 100%;
+      }
+      .Card-datas {
+        text-align: left;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+      }
+    }
+    @media  screen and (max-width:432px) {
+      .design_card{
+        margin-bottom: 10%;
+      }
+      .Card-2h3{
+        padding-bottom: 1rem;
+        padding-left: 2.7%;
+          padding-right: 1%;
+          text-wrap: wrap;
+        text-align: left;
+        color: #eeeaee;
+        font-size: 1.4rem;
+        margin-bottom: 0rem;
+      }
+      .Card2-datas{
+        padding-top: 2rem;
+      }
+      .Card-datas {
+        text-align: left;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+      }
+      .DesCards-Items{
+        height: 350px;
+        width: 100%; 
+        height: 100%;
+      }
+    }
+    @media  screen and (max-width:391px) {
+      .design_card{
+        margin-bottom: 10%;
+      }
+      .Card-2h3{
+        padding-left: 2.7%;
+          /* padding-right: 1%; */
+          text-wrap: wrap;
+          /* float: left; */
+        text-align: left;
+        color: #eeeaee;
+        font-size: 1.3rem;
+        padding-bottom: 3rem;
+      }
+      .Card2-datas{
+        padding-top: 2rem;
+      }
+     
+      .Card-datas {
+        text-align: left;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+      }
+      .DesCards-Items{
+        height: 350px;
+        width: 100%; 
+        height: 100%;
+      }
+    }
+    
