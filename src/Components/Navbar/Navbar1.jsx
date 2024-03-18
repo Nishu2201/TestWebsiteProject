@@ -18,20 +18,20 @@ const Navbar1 = () => {
             </div>
             <div className={`nav-links ${isActive ? 'active' : ''}`}>
                 <ul>
-                    <li><a href="#">Mobile Development</a></li>
+                    <li><a href="/mobile-development">Mobile Development</a></li>
                     <li className="dropdown">
-                        <a href="#">Web Development</a>
+                        <a href="/web-development">Web Development</a>
                         <ul className="dropdown-menu">
-                            <li><a href="#">Frontend Development</a></li>
-                            <li><a href="#">Backend Development</a></li>
+                            <li><a href="/frontend-development">Frontend Development</a></li>
+                            <li><a href="/backend-development">Backend Development</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Game Development</a></li>
-                    <li><a href="#">Blockchain</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/game-development">Game Development</a></li>
+                    <li><a href="/blockchain">Blockchain</a></li>
+                    <li><a href="/design">Design</a></li>
+                    <li><a href="/service">Service</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
             <div className="toggle-button" onClick={toggleNavbar}>
