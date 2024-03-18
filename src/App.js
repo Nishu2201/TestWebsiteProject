@@ -21,8 +21,8 @@ function App() {
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/mobile-development' element={<MobileDev/>}/>
-        <Route path='/web-devlopmement' element={<WebDev/>}/>
-        <Route path='/game-devlopmement' element={<GameDev/>}/>
+        <Route path='/web-development' element={<WebDev/>}/>
+        <Route path='/game-development' element={<GameDev/>}/>
         <Route path='/blockchain' element={<Blockchain/>}/>
         <Route path='/design' element={<Design/>}/>
         <Route path='/service' element={<Service/>}/>
