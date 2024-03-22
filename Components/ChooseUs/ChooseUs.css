@@ -1,0 +1,258 @@
+
+.Choose-head{
+    color: aliceblue;
+    line-height: 3rem;
+    text-align: left;
+    width: 100%;
+    max-height: auto;
+    padding-top: 2rem;
+    height: 100%;
+    /* margin: 40px 50px; */
+    border: none;
+    width: 100%;
+    padding-left: 7rem;
+  }
+  .Choose-head h3{
+    margin-top: 25px;
+    color: orange;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: left;
+  }
+ 
+  .Choose_icon{
+    display: inline-flex;
+    margin: 0 15px 0 0;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: aliceblue;
+}
+ .Choose-head .work-text{
+    /* margin-left: -42px; */
+    display: flex;
+    flex-wrap: wrap;
+    color: aliceblue;
+  }
+ .Choose-head .color-text{
+    font-size: 2rem;
+    font-weight: 400;
+    text-wrap: wrap;
+    line-height: 2;
+    margin-right: 1rem;
+    color: orange;
+  }
+  .Choose-p{
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin-left: 0.3rem;
+  }
+  .Choose-butn{
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: -9rem;
+    margin-bottom: 7rem; */
+  }
+  .button-link {
+    text-decoration: none;
+  }
+  .Choose_btn{
+    margin-top: -8em;
+    padding: 0 5px;
+    align-items: center;
+    height: 48px; 
+    border-radius: 6px;
+    border: 2px solid #ffa108;
+    transition: all .3s ease-out;
+   font-weight: 600;
+   line-height: 1.5;
+   transition: all .3s ease-out;
+   font-size: 1.3vw;
+  margin-right: 7rem;
+  }
+  .Choose_btn:hover {
+    background: #ffa108; 
+    transform: translateX(5px) scale(1.05);
+    box-shadow: 0px 10px 30px 0px #ffa108;
+    color: #eeeaea;
+  }
+
+  .carousal {
+    padding: 1rem;
+   margin: 2.5rem;
+   margin-left: 3.5rem;
+   margin-right: 6rem;
+    color: #fff;
+  }
+  /* Done here */
+  .DesignChoose-box{
+    height: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15em;
+    background: linear-gradient( transparent, #00e5ff, #00e5ff, transparent);
+    background-size: 2px 100%; /* Adjust the size of the gradient to match your border size */
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+.DesignChoose-Head{
+    margin-top: -0.4rem; 
+      padding-bottom: 0.8rem;
+      display: flex;
+     justify-content: flex-start;
+}
+
+.DesignChooseh5{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+  .carousal p{
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    text-align: left;
+    text-wrap: wrap;
+    padding-right:1rem;
+  }
+  
+  .slick-slide div {
+    margin: 0 1rem;
+  }
+  
+  .slick-slide div {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  
+  .slick-dots li button:before {
+    color: #fff !important;
+    font-size: 1rem !important;
+    top: 2rem !important;
+  }
+  
+  @media (max-width:1024px){
+    .Choose-butn{
+      width: auto;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .Choose_btn{
+      margin-top: 0.5em;
+      padding: 0 3px;
+      align-items: center;
+      height: 48px; 
+      width: 10em;
+      border-radius: 6px;
+      border: 2px solid #ffa108;
+      transition: all .3s ease-out;
+     font-weight: 600;
+     line-height: 1.5;
+     transition: all .3s ease-out;
+     font-size: 1.2em;
+    margin-right: 0rem;
+    }
+    .DesignChoose-box{
+      height: 23em;
+    }
+  }
+  @media (max-width:996px){
+  .Choose-head{
+    padding-left: 5rem;
+  }}
+  @media (max-width:768px){
+    .Choose-butn{
+      width: auto;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .Choose_btn{
+      margin-top: 0.5em;
+      padding: 0 3px;
+      align-items: center;
+      height: 48px; 
+      width: 10em;
+      border-radius: 6px;
+      border: 2px solid #ffa108;
+      transition: all .3s ease-out;
+     font-weight: 600;
+     line-height: 1.5;
+     transition: all .3s ease-out;
+     font-size: 1.2em;
+    margin-right: 0rem;
+    }
+    .carousal {
+      padding: 1rem;
+     margin-left: 2.3rem;
+     margin-right: 0.8rem;
+     margin-bottom: 1rem;
+      color: #fff;
+    }
+  }
+
+@media (max-width:600px){
+  .Choose-head{
+    border: none;
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 0.3rem;
+  }
+  .Choose-head .color-text{
+    font-size: 1.5em;
+    font-weight: 400;
+    text-wrap: wrap;
+    line-height: 1.5;
+    margin-right: 1rem;
+    color: orange;
+  }
+  .Choose-p{
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-left: 0.3rem;
+  }
+  .carousal {
+    padding: 1rem;
+   margin: 0.1rem;
+   margin-right: 0.1rem;
+    color: #fff;
+  }
+  .DesignChoose-box{
+    height: 25em;
+  }
+}
+@media (max-width:431px){
+  .Choose-head{
+    border: none;
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 0.3rem;
+  }
+  .Choose-head .color-text{
+    font-size: 1.5em;
+    font-weight: 400;
+    text-wrap: wrap;
+    line-height: 1.5;
+    margin-right: 1rem;
+    color: orange;
+  }
+  .Choose-p{
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-left: 0.3rem;
+  }
+  .carousal {
+    padding: 1rem;
+   margin: 0.1rem;
+   margin-right: 0.1rem;
+    color: #fff;
+  }
+  .DesignChoose-box{
+    height: 25em;
+    padding-left:-20px;
+}
+}

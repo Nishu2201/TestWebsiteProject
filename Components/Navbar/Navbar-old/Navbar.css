@@ -1,0 +1,245 @@
+/* Navbar CSS */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #00e4ff;
+  height: 100px;
+  padding: 0 3vw;
+  position: relative;
+}
+
+.logo-container {
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.logo {
+  width: 7vw; /* Adjust the size of the logo as needed */
+  height: auto;
+}
+.logo:hover{
+  transform: scale(1.4);
+}
+.toggle-button {
+  display: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.toggle-button span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #090909;
+  margin: 6px 0;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 2vh;
+}
+
+.nav-item {
+  margin-left: 10px;
+  padding-right: 10px;  
+  position: relative; 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #020202;
+  transition: color 0.3s;
+  font-size: 2.5vh;
+  font-weight: 500;
+  /* font-family: 'Poppins-Medium  500' ; */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.nav-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Submenu CSS */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #00e4ff; /* Adjust background color as needed */
+  z-index: 2;
+}
+
+.nav-item:hover .submenu {
+  display: block;
+  justify-content: space-between;
+  
+}
+
+.submenu li {
+  padding-top: 5px;
+  /* text-align: left; */
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 6px;
+}
+
+.submenu a {
+  color: #020202; /* Adjust the color as needed */
+  text-decoration: none;
+  font-size: 1.1vw;
+  font-weight: 500;
+  display: block;
+  transition: color 0.3s;
+}
+
+.submenu a:hover {
+  color: red; /* Adjust the hover color as needed */
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 996px) {
+  .navbar {
+    width: 100%;
+  }
+  .nav-item {
+    margin-left: 10px;
+    padding-right: 10px;  
+    position: relative; 
+    padding-top: 10px;
+  }
+  .navbar-nav {
+    list-style-type: none;
+    padding: 0 2vh;
+    display: flex;
+    /* gap: 2vw; */
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #090909;
+    transition: color 0.3s;
+    font-size: 1vw;
+    font-weight: 500;
+   
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  }
+  
+  .nav-link:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: red; /* Adjust background color as needed */
+    z-index: 2;
+  }
+  
+  .nav-item:hover .submenu {
+    display: block;
+    align-items: center;
+  }
+  
+  .submenu li {
+    /* padding: 10px; */
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .submenu a {
+    color: #000000; /* Adjust the color as needed */
+    text-decoration: none;
+    font-size: 1vw;
+    display: block;
+    transition: color 0.3s;
+    text-align: left;
+  }
+  
+  .submenu a:hover {
+    color: red; /* Adjust the hover color as needed */
+  }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2d8c7;
+    height: 60px;
+    padding: 0 3vw;
+    position: relative;
+  }
+  .logo {
+    width: 12vw; 
+    height: auto;
+  }
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f2d8c7;
+    padding: 0 5vw;
+    z-index: 100;
+    background: rgba(143, 135, 135, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+
+/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  }
+
+  .navbar-nav.active {
+    display: flex;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  .nav-item {
+   
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .nav-link{
+    font-size: 2vw;
+  }
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 2vw;
+  width: 15vh;
+  background-color: #f2d8c7;
+  padding: 0 5vw;
+  z-index: 2;
+  /* background: rgba(90, 90, 90, 0.2); */
+box-shadow: 0 4px 30px rgba(183, 13, 13, 0.1);
+backdrop-filter: blur(10px);
+}
+
+.submenu a {
+  color: #000000; /* Adjust the color as needed */
+  text-decoration: none;
+  font-size: 2vh;
+  display: flex;
+  transition: color 0.3s;
+}
+}

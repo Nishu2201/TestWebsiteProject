@@ -1,0 +1,127 @@
+.About_Goal {
+  height: calc(100% - 100px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8%;
+    border-radius: 20px;
+  }
+  
+  .Our-goal, .Our-mission, .Our-vision {
+    width: 95%; /* Take 80% of parent width */
+    /* max-width: 600px;  */
+    padding: 20px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  .Our-vision{
+    margin-bottom: 2em;
+  }
+  
+  .Our-goal h2, .Our-mission h2, .Our-vision h2 {
+    text-align: left;
+    padding: 10px;
+    padding-bottom: -5rem;
+    background: linear-gradient(90deg, #00e5ff 35%, transparent );
+    border-radius: 8px;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+    width: 10em;
+  }
+  
+  .icon {
+    padding-top: 0.4rem;
+    margin-bottom: -2.5%;
+    margin-right:-1%;
+  }
+  
+  .cards {
+    display: flex;
+    height: calc(33.33%-25px);
+    justify-content: center; /* Center cards horizontally */
+    flex-wrap: wrap; /* Allow flex wrapping */
+    gap: 30px; /* Add gap between cards */
+    text-align: left;
+  }
+  
+  .card {
+    flex-wrap: wrap;
+    background: #eeeaea;
+    border-radius: 12px;
+    height: calc(33.33%-25px);
+    /* height: 15em; */
+    width: 12em;
+    flex: 0 0 calc(33.333% - 20px); /* Three cards per row by default */
+    max-width: calc(33.333% - 21px); /* Set max-width for cards */
+    padding: 30px;
+    margin-bottom: 20px; /* Add spacing between rows */
+    /* border: 1px solid #ccc; Add borders for better visualization */
+  }
+
+  .card:hover{
+    background: #00e5ff;
+  }
+
+  .card h3{
+    color: #ffa108;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+.card-p{
+  /* text-align: left; */
+  align-items: center;
+  /* padding-top: 1rem; */
+  /* padding-left: 2rem; */
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.AboutIcon-Img{
+  width: 2.2rem;
+    padding-top: -0.8rem;
+    padding-right: 5px;
+  }
+  /* .card p{
+    font-size: 1.2em;
+  } */
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .Our-goal, .Our-mission, .Our-vision {
+      width: 100%; /* Adjust width for smaller screens */
+    }
+    /* .About_Goal {
+        margin-top: 35rem;
+        } */
+    .card {
+      flex: 0 0 calc(50% - 20px); /* Two cards per row on smaller screens */
+      max-width: calc(50% - 20px); /* Set max-width for cards */
+    }
+  }
+  
+  @media (max-width: 432px) {
+    .About_Goal {
+        margin: 0 5%;
+      }
+      .Our-goal h2, .Our-mission h2, .Our-vision h2 {
+        text-align: left;
+        padding: 10px;
+        padding-bottom: -5rem;
+        background: linear-gradient(90deg, #00e5ff 35%, transparent );
+        border-radius: 8px;
+        margin-left: 0.6rem;
+        margin-top: 0.1em;
+        margin-bottom: 1.2em;
+        width: 10em;
+      }
+    .card {
+      flex: 0 0 calc(100% - 18px); /* One card per row for mobile screens */
+      max-width: calc(100% - 18px); /* Set max-width for cards */
+    }
+  }
+  

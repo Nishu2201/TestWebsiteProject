@@ -1,0 +1,158 @@
+/* :root {
+    --green: #27ae60;
+    --black: #444;
+    --light-color: #777;
+    --bg-color: #e6e6e6;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  --box-shadow: 0.4rem 0.4rem 1rem #ccc inset, 0.4rem 0.4rem 0.4rem 1rem #fff inset;
+    --box-shadow-insert: 0.4rem 0.4rem 1rem #772727 inset, 0.4rem 0.4rem 1rem #fff inset; 
+    --box-background-left: #fdf3ce;
+    --box-background-right: #f8f6f4; 
+} */
+
+.data {
+    min-height: auto;
+    height: 100%;
+    /* padding: 2rem; */
+    border-radius: 0.5rem;
+    margin: 40px 7%;
+    border-radius: 14px;
+    /* border: #00eeff; */
+    border: 5px solid #00e4ff;
+    padding: 3px 10px;
+}
+.data .data-top{
+    align-items: center;
+    text-align: center;
+    color: #ffa108;
+    font-size: 2rem;
+    font-weight: 500;
+   padding-top: 1rem;
+}
+.inno_text{
+    font-size: 1.8rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    color: aliceblue;
+}
+.data .Innovator-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3%;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    gap: 0; /* Remove the gap between columns */
+}
+
+.data .Innovator-row .NO-data {
+    height: 5rem;
+    /* width: 10rem;  */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    text-align: center; */
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 15px; 
+    margin-top: 20px;
+    margin-right: 50px;
+   
+    /* box-shadow: var(--box-shadow); */
+    transition: box-shadow 0.3s ease, transform 0.5s ease;
+    transform: translateY(0);
+    opacity: 0;
+    /* background: linear-gradient(to right, var(#fdf3ce), var(#f8f6f4),var(#f8f6f4)); */
+}
+.NO-data{
+    flex: 0 0 calc(20% - 20px);
+    border-radius: 10px;
+    width: 5rem;
+    height: 8rem;
+    /* border: 2px solid ; */
+    background: linear-gradient(90deg, #00e4ff 10%, transparent );
+}
+.data .Innovator-row .NO-data h3 {
+    font-size: 1.5rem;
+    color: #eeeaea;
+    line-height: 0.5;
+    text-align: left;
+    margin-right: 80px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    gap: 0;
+}
+
+.data .Innovator-row .NO-data p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #020202;
+    text-align: left;
+    gap: 0;
+    margin-top: 0.1rem;
+    margin-bottom: 0rem; /* Removed margin-bottom */
+    /* padding-right: 42%; */
+    padding-left: 0.5rem;
+    /* padding-right: 60%; */
+}
+
+/* .data .row > div:hover h3 {
+    color: var(--green);
+} */
+
+/* Add fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to boxes */
+.data .Innovator-row .NO-data {
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@media (max-width: 1280px) {
+    .NO-data {
+      flex: 0 1 calc(38% - 30px);
+      /* margin-right: 5rem; */
+      /* width: 20%;
+      height: 5rem; */
+    }
+  }
+
+@media (max-width: 991px) {
+    .NO-data {
+      flex: 1 0 calc(38% - 30px);
+      /* margin-right: 5rem; */
+      /* width: 20%;
+      height: 5rem; */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .data .Innovator-row .NO-data {
+      flex: 0 0 calc(100% - 20px);
+      width: 80%;
+      height: 5rem;
+    }
+  }
+  @media (max-width: 390px) {
+    .data .Innovator-row .NO-data {
+      flex: 0 0 calc(100% - 20px);
+      /* width: 80%; */
+      height: 5rem;
+    }
+  }
